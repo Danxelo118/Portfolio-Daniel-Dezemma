@@ -19,11 +19,22 @@ header {
     left: 0;
 }
 
+header:hover {
+    color: #fff;
+    font-weight: light;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+
 nav {
     display: flex;
     justify-content: center;
     background-color: #F2AF29;
-    padding: 10px;
+    padding: 50px;
+}
+nav a:hover {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
 }
 
 nav a {
@@ -31,6 +42,7 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     padding: 5px;
+    font-size: 20px;
 }
 
 .hero {
@@ -38,6 +50,7 @@ nav a {
     background-position: center;
     color: #000;
     text-align: center;
+    padding: 50px;
 }
 
 footer {
@@ -74,13 +87,12 @@ footer {
   .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -25px;
-    font-size: 30px;
-    color: white;
+    top: 100%;
+    font-size: 50px;
+    color: #000;
     font-weight: bold;
     transition: 0.3s;
+    transform: translateY(-50%);
   }
 
   .prev {
@@ -92,5 +104,8 @@ footer {
   }
 
   .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
   }
+
+  
