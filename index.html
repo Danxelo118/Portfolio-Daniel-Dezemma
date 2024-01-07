@@ -4,25 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./styles.css">
-    <meta name="author" content="Daniel Dezemma"> 
+    
+<link rel="stylesheet" href="./styles.css">
+   
 </head>
 <body>
-    <div class="title">Daniel Dezemma</div>
+
     <header>
-        <h1>Your Website Header</h1>
+        <h1>Daniel Dezemma</h1>
     </header>
 
-    <main>
-        <section>
-            <h2>Main Content Section</h2>
-            <p>This is the main content of your website.</p>
-        </section>
-    </main>
+    <nav>
+        <a href="#">Acceuil</a>
+        <a href="#">Projets</a>
+        <a href="#">About me</a>
+        <a href="#">Contact</a>
+    </nav>
 
+    <section class="hero">
+        <h2>Welcome to Your Website</h2>
+        <p>Technicien en multimédia.</p>
+    </section>
+    <div class="carousel">
+        <div class="carousel-container">
+          <div class="carousel-item">
+            <img src="./assets/img/back3.jpg" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/back4.jpg" alt="Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/back5.jpg" alt="Image 3">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/background2.jpg" alt="Image 4">
+          </div>
+        </div>
+      
+        <div class="prev" onclick="prevSlide()">&#10094;</div>
+        <div class="next" onclick="nextSlide()">&#10095;</div>
+      </div>
+      
     <footer>
-        <p>&copy; 2023 Your Website Footer</p>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
     </footer>
+
 </body>
 <script src="script.js"></script>
 </html>
