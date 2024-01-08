@@ -24,3 +24,13 @@ function prevSlide() {
     showSlide(totalSlides - 1);
   }
 }
+
+function toggleLanguage() {
+    var button = document.getElementById('language-switch');
+    if (button.innerHTML === 'EN') {
+        button.innerHTML = 'FR';
+    } else {
+        button.innerHTML = 'EN';
+       
+    }
+}

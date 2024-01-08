@@ -6,29 +6,24 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #A18276;
+    background: linear-gradient(to right, #EEF0F2, #1E152A);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 header {
-    background-color: #A18276;
+    background: linear-gradient(to right, #EEF0F2, #1E152A);
     color: #000;
     padding: 10px;
     left: 0;
 }
 
-header:hover {
-    color: #fff;
-    font-weight: light;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
-}
 
 nav {
     display: flex;
     justify-content: center;
-    background-color: #A18276;
+    background: linear-gradient(to right, #EEF0F2, #1E152A);
     padding: 50px;
 }
 nav a:hover {
@@ -54,7 +49,7 @@ nav a {
 }
 
 footer {
-    background-color: #A18276;
+    background: linear-gradient(to right, #EEF0F2, #1E152A);
     color: #000;
     text-align: center;
     padding: 10px;
@@ -108,4 +103,23 @@ footer {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
   }
 
-  
+  #language-switch {
+    background: transparent;
+    position: absolute;
+    border: none;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    right: 300px;
+    transition: color 0.3s;
+}
+
+#language-switch:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+
+#language-switch::after {
+    content: '\25BC'; 
+    font-size: 12px;
+}
