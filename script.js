@@ -34,3 +34,21 @@ function toggleLanguage() {
        
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselContainer = document.querySelector('.carousel-container');
+    let currentIndex = 0;
+
+    function showNextSlide() {
+      currentIndex = (currentIndex + 1) % carouselContainer.children.length;
+      updateCarousel();
+    }
+
+    function updateCarousel() {
+      const translateValue = -currentIndex * 100 + '%';
+      carouselContainer.style.transform = 'translateX(' + translateValue + ')';
+    }
+
+    // Automatically move to the next slide every 3 seconds (adjust as needed)
+    setInterval(showNextSlide, 3000);
+  });

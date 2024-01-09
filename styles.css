@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: scroll;
 }
 
 header {
@@ -17,26 +18,27 @@ header {
     color: #000;
     padding: 10px;
     left: 0;
+    margin-bottom: -50px;
 }
 
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
     background: linear-gradient(to right, #EEF0F2, #1E152A);
-    padding: 50px;
+    padding: 10px;
 }
 nav a:hover {
     color: #fff;
-    font-weight: bold;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
 }
 
 nav a {
     color: #000;
     text-decoration: none;
-    margin: 0 15px;
-    padding: 5px;
+    margin: 0 50px;
+    padding: 1px;
     font-size: 20px;
 }
 
@@ -45,7 +47,7 @@ nav a {
     background-position: center;
     color: #000;
     text-align: center;
-    padding: 50px;
+    padding: 100px 50px;
 }
 
 footer {
@@ -53,15 +55,16 @@ footer {
     color: #000;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
 
 .carousel {
-    width: 80%;
+    width: 95%;
     margin: auto;
     overflow: hidden;
+    margin-top: 50px;
   }
 
   .carousel-container {
@@ -82,10 +85,9 @@ footer {
   .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 100%;
-    font-size: 50px;
+    top: 115%;
+    font-size: 30px;
     color: #000;
-    font-weight: bold;
     transition: 0.3s;
     transform: translateY(-50%);
   }
@@ -105,12 +107,13 @@ footer {
 
   #language-switch {
     background: transparent;
-    position: absolute;
+    display: flex;
+    justify-content: flex-end;
     border: none;
     color: #000;
     font-size: 20px;
     cursor: pointer;
-    right: 300px;
+    
     transition: color 0.3s;
 }
 
@@ -122,23 +125,4 @@ footer {
 #language-switch::after {
     content: '\25BC'; 
     font-size: 12px;
-}
-
-.hero img {
-    position: absolute;
-    left: 0;
-    top: 80px; 
-    z-index: 1;
-    width: 300px; 
-    height: auto; 
-    animation: moveUpDown 3s infinite alternate;
-}
-
-@keyframes moveUpDown {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(20px);
-    }
 }
