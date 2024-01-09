@@ -18,7 +18,8 @@
 
 body {
     font-family: 'poppins';
-    background: linear-gradient(to right, #EEF0F2, #CFCFEA);
+    /*background: linear-gradient(to right, #EEF0F2, #CFCFEA);*/
+    background:linear-gradient(to right,#292C35, #17181D );
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,20 +27,26 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #EEF0F2, #CFCFEA);
-    color: #000;
+    /*background: linear-gradient(to right, #EEF0F2, #CFCFEA);*/
+    background:linear-gradient(to right,#292C35 , #17181D );
+    color: #E09145 ;
+    
     padding: 10px;
     left: 0;
     margin-bottom: -50px;
     font-family: "poppinsL";
 }
-
+ h1:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+ }
 
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: linear-gradient(to right, #EEF0F2, #CFCFEA);
+    /*background: linear-gradient(to right, #EEF0F2, #CFCFEA);*/
+    background:linear-gradient(to right,#292C35 , #17181D );
     padding: 10px;
 }
 nav a:hover {
@@ -48,7 +55,8 @@ nav a:hover {
 }
 
 nav a {
-    color: #000;
+    color: #E09145 ;
+  
     text-decoration: none;
     margin: 0 50px;
     padding: 1px;
@@ -56,25 +64,55 @@ nav a {
     font-family: 'poppins';
 }
 
+#language-switch {
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    color: #E09145 ;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-family: 'poppins';
+}
+
+#language-switch:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+
+#language-switch::after {
+    content: '\25BC'; 
+    font-size: 12px;
+}
+
 .hero {
     background-size: cover;
     background-position: center;
-    color: #000;
+    color: #E09145 ;
     text-align: center;
     padding: 100px 50px;
     background-attachment: fixed;
     font-family: "poppinsL";
 }
 
+
+.about-me {
+    background:linear-gradient(to right,#292C35 , #17181D );
+}
+.about-me p {
+color: #E09145;
+}
+
 footer {
-    background: linear-gradient(to right, #EEF0F2, #CFCFEA);
-    color: #000;
+   /* background: linear-gradient(to right, #EEF0F2, #CFCFEA); */
+   background:linear-gradient(to right,#292C35 , #17181D );
+    color: #E09145;
     text-align: center;
     padding: 10px;
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 60px;
     font-family: "poppinsL";
 }
 
@@ -105,8 +143,8 @@ footer {
     cursor: pointer;
     position: absolute;
     top: 110%;
-    font-size: 30px;
-    color: #000;
+    font-size: 50px;
+    color: #fff;
     transition: 0.3s;
     transform: translateY(-50%);
   }
@@ -120,31 +158,11 @@ footer {
   }
 
   .prev:hover, .next:hover {
-    color: #fff;
+    color: #E09145;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
   }
 
-  #language-switch {
-    background: transparent;
-    display: flex;
-    justify-content: flex-end;
-    border: none;
-    color: #000;
-    font-size: 20px;
-    cursor: pointer;
-    transition: color 0.3s;
-    font-family: 'poppins';
-}
 
-#language-switch:hover {
-    color: #fff;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
-}
-
-#language-switch::after {
-    content: '\25BC'; 
-    font-size: 12px;
-}
 
 .parallax-bg {
     height: 100vh;
