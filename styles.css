@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #EEF0F2, #1E152A);
+    background: linear-gradient(to right, #EEF0F2, #CFCFEA);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #EEF0F2, #1E152A);
+    background: linear-gradient(to right, #EEF0F2, #CFCFEA);
     color: #000;
     padding: 10px;
     left: 0;
@@ -26,7 +26,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: linear-gradient(to right, #EEF0F2, #1E152A);
+    background: linear-gradient(to right, #EEF0F2, #CFCFEA);
     padding: 10px;
 }
 nav a:hover {
@@ -48,28 +48,31 @@ nav a {
     color: #000;
     text-align: center;
     padding: 100px 50px;
+    background-attachment: fixed;
 }
 
 footer {
-    background: linear-gradient(to right, #EEF0F2, #1E152A);
+    background: linear-gradient(to right, #EEF0F2, #CFCFEA);
     color: #000;
     text-align: center;
     padding: 10px;
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 60px;
 }
 
 .carousel {
-    width: 95%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
-    margin-top: 50px;
+     margin-bottom: 20px;
   }
 
   .carousel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    align-items: center;
   }
 
   .carousel-item {
@@ -85,7 +88,7 @@ footer {
   .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 115%;
+    top: 110%;
     font-size: 30px;
     color: #000;
     transition: 0.3s;
@@ -113,7 +116,6 @@ footer {
     color: #000;
     font-size: 20px;
     cursor: pointer;
-    
     transition: color 0.3s;
 }
 
@@ -125,4 +127,25 @@ footer {
 #language-switch::after {
     content: '\25BC'; 
     font-size: 12px;
+}
+
+.parallax-bg {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+}
+
+.parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    text-align: center;
+    z-index: 1;
 }

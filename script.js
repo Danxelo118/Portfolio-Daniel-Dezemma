@@ -52,3 +52,5 @@ document.addEventListener('DOMContentLoaded', function () {
     // Automatically move to the next slide every 3 seconds (adjust as needed)
     setInterval(showNextSlide, 3000);
   });
+
+
