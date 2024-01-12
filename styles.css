@@ -19,7 +19,7 @@
 body {
     font-family: 'poppins';
     /*background: linear-gradient(to right, #EEF0F2, #CFCFEA);*/
-    background:linear-gradient(to right,#292C35, #17181D );
+    background:linear-gradient(to right,#383D3B, #17181D );
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,7 +28,7 @@ body {
 
 header {
     /*background: linear-gradient(to right, #EEF0F2, #CFCFEA);*/
-    background:linear-gradient(to right,#292C35 , #17181D );
+    background:linear-gradient(to right,#383D3B , #17181D );
     color: #E09145 ;
     
     padding: 10px;
@@ -36,17 +36,13 @@ header {
     margin-bottom: -50px;
     font-family: "poppinsL";
 }
- h1:hover {
-    color: #fff;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
- }
 
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     /*background: linear-gradient(to right, #EEF0F2, #CFCFEA);*/
-    background:linear-gradient(to right,#292C35 , #17181D );
+    background:linear-gradient(to right,#383D3B , #17181D );
     padding: 10px;
 }
 nav a:hover {
@@ -63,6 +59,18 @@ nav a {
     font-size: 20px;
     font-family: 'poppins';
 }
+
+footer {
+    /* background: linear-gradient(to right, #EEF0F2, #CFCFEA); */
+    background:linear-gradient(to right,#383D3B , #17181D );
+     color: #E09145;
+     text-align: center;
+     padding: 10px;
+     position: relative;
+     bottom: 0;
+     width: 100%;
+     font-family: "poppinsL";
+ }
 
 #language-switch {
     background: transparent;
@@ -141,7 +149,7 @@ z-index: 1;
 }
 
 .about-me p:hover {
-font-size: 25px;
+font-size: 23px;
 color: #fff;
 text-shadow: 0 0 20px #17181D, 0 0 30px #17181D, 0 0 50px #17181D;
 position: absolute;
@@ -152,17 +160,6 @@ text-align: center;
 z-index: 1;
 }
 
-footer {
-   /* background: linear-gradient(to right, #EEF0F2, #CFCFEA); */
-   background:linear-gradient(to right,#292C35 , #17181D );
-    color: #E09145;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-family: "poppinsL";
-}
 
 .carousel {
     width: 100%;
