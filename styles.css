@@ -98,7 +98,7 @@ nav a {
 
 
 .about-me {
-    background:linear-gradient(to right,#292C35 , #17181D );
+    background-image: url("./assets/img/wall3.avif");
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -106,12 +106,50 @@ nav a {
     position: relative;
     overflow: hidden;
     background-repeat: no-repeat;
-
     font-family: 'poppins';
 }
 
+.about-me:hover {
+    mix-blend-mode:color-dodge;
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 50px #fff;
+}
+
+.about-me h3 {
+color: #fff;
+font-size: 20px;
+position: absolute;
+top: 10%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+z-index: 1;
+}
+
 .about-me p {
-color: #E09145;
+color: #fff;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+z-index: 1;
+}
+
+.about-me:hover h3 {
+    display: none;
+}
+
+.about-me p:hover {
+font-size: 25px;
+color: #fff;
+text-shadow: 0 0 20px #17181D, 0 0 30px #17181D, 0 0 50px #17181D;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+z-index: 1;
 }
 
 footer {
@@ -185,6 +223,7 @@ footer {
     margin-top: 60px;
     font-family: 'poppins';
 }
+
 
 .parallax-content {
     position: absolute;
