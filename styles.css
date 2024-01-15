@@ -26,11 +26,10 @@ body {
     overflow: scroll;
 }
 
-header {
+h5 {
     /*background: linear-gradient(to right, #EEF0F2, #CFCFEA);*/
     background:linear-gradient(to right,#383D3B , #17181D );
     color: #E09145 ;
-    
     padding: 10px;
     left: 0;
     margin-bottom: -50px;
@@ -103,6 +102,8 @@ footer {
     background-attachment: fixed;
     font-family: "poppinsL";
 }
+
+
 
 
 .about-me {
